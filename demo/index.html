@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../src/jSearch-1.0.0.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#search").jSearch({
+		items:[{text:"姓名",value:"1"},{text:"性别",value:"2"},{text:"地址",value:"3"}],
+		autoClear:false,
+		onsearch:function(name,value){
+			alert("name="+name+",value="+value);
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="search"></div>
+</body>
+</html>
